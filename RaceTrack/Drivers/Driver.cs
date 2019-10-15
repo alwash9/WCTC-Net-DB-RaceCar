@@ -34,5 +34,10 @@ namespace RaceTrack.RaceTrack.Drivers
 
         public abstract void Drive();
 
+        public virtual void StopEngine()
+        {
+            Console.WriteLine($"{Name} gets out of the {Car.Name}");
+        }
+
     }
 }

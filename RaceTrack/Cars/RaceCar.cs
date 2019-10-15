@@ -1,4 +1,8 @@
 ﻿using System;
+using System.Threading;
+using RaceTrack.RaceTrack.Drivers;
+using RaceTrack.RaceTrack.Cars;
+using System.Collections.Generic;
 
 namespace RaceTrack.RaceTrack.Cars
 {
@@ -33,6 +37,11 @@ namespace RaceTrack.RaceTrack.Cars
         public virtual void Brake()
         {
             Console.WriteLine($"The {Name} ends in position {Position}!");
+        }
+
+        public virtual void StopEngine()
+        {
+            Console.WriteLine($"The driver cuts off the engine");
         }
     }
 }
